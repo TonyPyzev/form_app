@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:form_app/presentation/cubit/contactForm/contact_form_cubit.dart';
 import 'package:form_app/presentation/theme/app_theme.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'navigation/navigation.dart';
 
 class Application extends StatelessWidget {
@@ -11,12 +11,19 @@ class Application extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: _title,
-      theme: AppTheme().appTheme,
-      initialRoute: Navigation.initialRoute,
-      routes: Navigation.routes,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => ContactFormCubit(),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: _title,
+        theme: AppTheme().appTheme,
+        initialRoute: Navigation.initialRoute,
+        routes: Navigation.routes,
+      ),
     );
   }
 }
