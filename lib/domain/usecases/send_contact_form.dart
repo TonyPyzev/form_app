@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:form_app/core/failures/failure.dart';
-import 'package:form_app/core/failures/network_failure.dart';
-import 'package:form_app/core/failures/server_failure.dart';
-import 'package:form_app/core/success/response_success.dart';
-import 'package:form_app/core/success/success.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
+import '../../core/failures/failure.dart';
+import '../../core/failures/network_failure.dart';
+import '../../core/failures/server_failure.dart';
+import '../../core/success/response_success.dart';
+import '../../core/success/success.dart';
 import '../entities/contact_form_data.dart';
 
 abstract class SendContactForm {

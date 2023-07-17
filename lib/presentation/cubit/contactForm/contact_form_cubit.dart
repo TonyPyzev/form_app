@@ -1,12 +1,12 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
-import 'package:form_app/core/failures/failure.dart';
-import 'package:form_app/core/failures/network_failure.dart';
-import 'package:form_app/core/failures/server_failure.dart';
-import 'package:form_app/core/success/response_success.dart';
-import 'package:form_app/core/success/success.dart';
-import 'package:form_app/domain/usecases/send_contact_form.dart';
+import '../../../core/failures/failure.dart';
+import '../../../core/failures/network_failure.dart';
+import '../../../core/failures/server_failure.dart';
+import '../../../core/success/response_success.dart';
+import '../../../core/success/success.dart';
+import '../../../domain/usecases/send_contact_form.dart';
 
 import '../../../domain/entities/contact_form_data.dart';
 

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:form_app/presentation/cubit/contactForm/contact_form_cubit.dart';
-import 'package:form_app/presentation/theme/app_theme.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'cubit/contactForm/contact_form_cubit.dart';
 import 'navigation/navigation.dart';
+import 'theme/app_theme.dart';
 
 class Application extends StatelessWidget {
   final String _title = 'Form app';

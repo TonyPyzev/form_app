@@ -1,3 +1,3 @@
-import 'package:form_app/core/success/success.dart';
+import 'success.dart';
 
 class ResponseSuccess extends Success {}
